@@ -178,3 +178,32 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 [I 2024-02-14 14:16:23.329 ServerApp] Copying elliot/config_files/savvina_config.yml to /elliot/config_files
 [I 2024-02-14 14:17:22.048 ServerApp] Saving file at /Second try.ipynb
 [I 2024-02-14 14:19:42.909 ServerApp] Creating new directory in /elliot/data
+[I 2024-02-14 14:21:24.066 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:23:25.038 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:26:39.015 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:27:27.004 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:31:28.992 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:34:41.994 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:35:30.985 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:36:43.005 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:37:41.339 ServerApp] Saving file at /elliot/config_files/pop_good1.yml
+[I 2024-02-14 14:38:06.532 ServerApp] Saving file at /elliot/config_files/pop_good1.yml
+[I 2024-02-14 14:38:13.996 ServerApp] Saving file at /elliot/config_files/pop_good1.yml
+[I 2024-02-14 14:39:06.084 ServerApp] Saving file at /elliot/config_files/pop_good1.yml
+[I 2024-02-14 14:39:33.975 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:40:09.645 ServerApp] Saving file at /elliot/config_files/pop_good1.yml
+[I 2024-02-14 14:40:43.973 ServerApp] Saving file at /PopularityGood.ipynb
+2024-02-14 14:40:46.397646: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-14 14:40:46.397679: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-14 14:40:50.476575: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2024-02-14 14:40:50.476613: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2024-02-14 14:40:50.476640: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (alice.ia.cwi.nl): /proc/driver/nvidia/version does not exist
+2024-02-14 14:40:50.476885: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-02-14 14:40:50.491622: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 1996120000 Hz
+2024-02-14 14:40:50.499256: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4261210 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-02-14 14:40:50.499304: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[I 2024-02-14 14:41:35.104 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:42:44.074 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:44:36.361 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:44:44.160 ServerApp] Saving file at /PopularityGood.ipynb
