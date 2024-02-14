@@ -136,3 +136,45 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 [I 2024-02-14 11:54:25.257 ServerApp] Restoring connection for 426060dc-bf09-4904-ab96-c21f6cda5563:dc1a5691-9f1f-4c33-a021-eadca197e2e6
 [W 2024-02-14 11:55:55.260 ServerApp] WebSocket ping timeout after 90003 ms.
 [I 2024-02-14 11:56:00.269 ServerApp] Starting buffering for 426060dc-bf09-4904-ab96-c21f6cda5563:dc1a5691-9f1f-4c33-a021-eadca197e2e6
+[I 2024-02-14 12:04:18.777 ServerApp] Connecting to kernel 426060dc-bf09-4904-ab96-c21f6cda5563.
+[I 2024-02-14 12:04:47.957 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 12:32:38.172 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 12:34:38.217 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 12:34:43.121 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 12:36:01.579 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 12:36:10.433 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 12:36:38.162 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 12:40:38.217 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 12:42:39.166 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 12:46:41.157 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 12:50:43.144 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 12:54:45.152 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 12:58:47.127 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:00:48.120 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:04:50.134 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:08:52.109 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:12:54.123 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:14:55.110 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:18:57.097 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:22:59.084 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:27:01.097 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:31:03.089 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:33:04.078 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:37:06.073 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:41:08.083 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:45:10.072 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:49:12.064 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:51:13.065 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:55:15.138 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 13:59:16.080 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:03:16.178 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:06:54.594 ServerApp] Creating new notebook in 
+[I 2024-02-14 14:06:57.773 ServerApp] Kernel started: c788e460-9f22-48ed-b62e-2a3520c3bbcf
+[I 2024-02-14 14:06:58.378 ServerApp] Connecting to kernel c788e460-9f22-48ed-b62e-2a3520c3bbcf.
+[I 2024-02-14 14:07:17.042 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:08:58.017 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:09:18.083 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:13:20.019 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:16:23.329 ServerApp] Copying elliot/config_files/savvina_config.yml to /elliot/config_files
+[I 2024-02-14 14:17:22.048 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:19:42.909 ServerApp] Creating new directory in /elliot/data
