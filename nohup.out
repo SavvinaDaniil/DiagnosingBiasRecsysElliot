@@ -105,3 +105,34 @@
 [I 2024-02-13 16:45:20.342 ServerApp] Saving file at /Second try.ipynb
 [W 2024-02-13 16:47:25.487 ServerApp] WebSocket ping timeout after 119773 ms.
 [I 2024-02-13 16:47:30.497 ServerApp] Starting buffering for 426060dc-bf09-4904-ab96-c21f6cda5563:540bd110-045c-4f2c-b2e8-0eabd649efc2
+[I 2024-02-14 10:44:00.359 ServerApp] 302 GET / (@127.0.0.1) 0.92ms
+[I 2024-02-14 10:46:48.364 ServerApp] Connecting to kernel 426060dc-bf09-4904-ab96-c21f6cda5563.
+[I 2024-02-14 10:48:48.310 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 10:50:48.895 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:21:22.862 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:24:08.029 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 11:24:43.826 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 11:24:48.249 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+2024-02-14 11:25:10.974943: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2024-02-14 11:25:10.974987: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2024-02-14 11:25:10.975019: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (alice.ia.cwi.nl): /proc/driver/nvidia/version does not exist
+2024-02-14 11:25:10.975217: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-02-14 11:25:10.990493: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 1996120000 Hz
+2024-02-14 11:25:10.997363: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x3e05980 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-02-14 11:25:10.997420: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[I 2024-02-14 11:25:23.825 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:27:23.884 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:29:23.945 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:31:24.003 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:33:24.074 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:35:24.141 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:37:24.213 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:39:24.808 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:40:22.806 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
+[I 2024-02-14 11:43:25.794 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 11:54:25.185 ServerApp] Starting buffering for 426060dc-bf09-4904-ab96-c21f6cda5563:dc1a5691-9f1f-4c33-a021-eadca197e2e6
+[I 2024-02-14 11:54:25.256 ServerApp] Connecting to kernel 426060dc-bf09-4904-ab96-c21f6cda5563.
+[I 2024-02-14 11:54:25.257 ServerApp] Restoring connection for 426060dc-bf09-4904-ab96-c21f6cda5563:dc1a5691-9f1f-4c33-a021-eadca197e2e6
+[W 2024-02-14 11:55:55.260 ServerApp] WebSocket ping timeout after 90003 ms.
+[I 2024-02-14 11:56:00.269 ServerApp] Starting buffering for 426060dc-bf09-4904-ab96-c21f6cda5563:dc1a5691-9f1f-4c33-a021-eadca197e2e6
