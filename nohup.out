@@ -103,3 +103,5 @@
 [I 2024-02-13 16:43:31.401 ServerApp] Saving file at /Second try.ipynb
 [I 2024-02-13 16:45:17.478 ServerApp] Saving file at /elliot/config_files/savvina_config.yml
 [I 2024-02-13 16:45:20.342 ServerApp] Saving file at /Second try.ipynb
+[W 2024-02-13 16:47:25.487 ServerApp] WebSocket ping timeout after 119773 ms.
+[I 2024-02-13 16:47:30.497 ServerApp] Starting buffering for 426060dc-bf09-4904-ab96-c21f6cda5563:540bd110-045c-4f2c-b2e8-0eabd649efc2
