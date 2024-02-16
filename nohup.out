@@ -230,3 +230,33 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 [W 2024-02-14 15:10:03.435 ServerApp] WebSocket ping timeout after 90000 ms.
 [I 2024-02-14 15:10:08.372 ServerApp] Starting buffering for c788e460-9f22-48ed-b62e-2a3520c3bbcf:099dca63-219a-417a-887b-5d901d93766c
 [I 2024-02-14 15:10:08.437 ServerApp] Starting buffering for 426060dc-bf09-4904-ab96-c21f6cda5563:42d94350-08d8-4679-b93c-3a5c6af4ae54
+[I 2024-02-16 15:29:19.493 ServerApp] 302 GET /?token=[secret] (@127.0.0.1) 1.95ms
+[I 2024-02-16 15:33:33.752 ServerApp] Connecting to kernel c788e460-9f22-48ed-b62e-2a3520c3bbcf.
+[I 2024-02-16 15:33:33.754 ServerApp] Discarding 337 buffered messages for c788e460-9f22-48ed-b62e-2a3520c3bbcf:099dca63-219a-417a-887b-5d901d93766c
+[I 2024-02-16 15:33:38.883 ServerApp] Creating new notebook in 
+[I 2024-02-16 15:33:40.898 ServerApp] Kernel started: 6ded6905-b045-405d-b7e8-fd98e10948a0
+[I 2024-02-16 15:33:41.563 ServerApp] Connecting to kernel 6ded6905-b045-405d-b7e8-fd98e10948a0.
+[I 2024-02-16 15:35:40.797 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-16 15:41:41.859 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-16 17:41:41.274 ServerApp] Creating new file in 
+[I 2024-02-16 17:41:55.644 ServerApp] Creating new file in 
+[I 2024-02-16 17:42:13.482 ServerApp] Saving file at /data_generation.py
+[I 2024-02-16 17:42:28.708 ServerApp] Saving file at /modelling_mf.py
+[I 2024-02-16 17:50:19.040 ServerApp] Saving file at /modelling_mf.py
+[I 2024-02-16 17:50:24.990 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-16 17:51:27.725 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-16 17:51:37.052 ServerApp] Creating new file in 
+[I 2024-02-16 17:52:20.385 ServerApp] Saving file at /analysis.py
+[I 2024-02-16 17:52:37.825 ServerApp] Saving file at /modelling_mf.py
+[I 2024-02-16 17:52:49.568 ServerApp] Kernel restarted: 6ded6905-b045-405d-b7e8-fd98e10948a0
+[I 2024-02-16 17:52:49.603 ServerApp] Starting buffering for 6ded6905-b045-405d-b7e8-fd98e10948a0:ab49c63c-75dd-4a59-9d8a-323b95c871c0
+[I 2024-02-16 17:52:49.618 ServerApp] Connecting to kernel 6ded6905-b045-405d-b7e8-fd98e10948a0.
+[I 2024-02-16 17:52:49.618 ServerApp] Restoring connection for 6ded6905-b045-405d-b7e8-fd98e10948a0:ab49c63c-75dd-4a59-9d8a-323b95c871c0
+[I 2024-02-16 17:53:04.323 ServerApp] Creating new file in 
+[I 2024-02-16 17:53:15.508 ServerApp] Saving file at /enrich.py
+[I 2024-02-16 17:53:27.772 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-16 17:54:21.325 ServerApp] Starting buffering for c788e460-9f22-48ed-b62e-2a3520c3bbcf:0f6205a9-aa9b-4c96-ae15-110b24fd5489
+[I 2024-02-16 17:55:27.821 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-16 17:56:22.272 ServerApp] Connecting to kernel c788e460-9f22-48ed-b62e-2a3520c3bbcf.
+[I 2024-02-16 17:57:27.877 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-16 17:59:10.685 ServerApp] Saving file at /AnalyzeRecs.ipynb
