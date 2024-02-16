@@ -207,3 +207,26 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 [I 2024-02-14 14:42:44.074 ServerApp] Saving file at /PopularityGood.ipynb
 [I 2024-02-14 14:44:36.361 ServerApp] Saving file at /Second try.ipynb
 [I 2024-02-14 14:44:44.160 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:46:36.966 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:48:37.996 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:48:45.959 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:50:46.964 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:52:39.960 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:54:48.936 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 14:56:41.937 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 14:58:50.955 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 15:00:43.941 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 15:02:52.952 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 15:04:45.965 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 15:06:46.934 ServerApp] Saving file at /Second try.ipynb
+[I 2024-02-14 15:06:55.922 ServerApp] Saving file at /PopularityGood.ipynb
+[I 2024-02-14 15:08:33.317 ServerApp] Starting buffering for c788e460-9f22-48ed-b62e-2a3520c3bbcf:099dca63-219a-417a-887b-5d901d93766c
+[I 2024-02-14 15:08:33.325 ServerApp] Starting buffering for 426060dc-bf09-4904-ab96-c21f6cda5563:42d94350-08d8-4679-b93c-3a5c6af4ae54
+[I 2024-02-14 15:08:33.360 ServerApp] Connecting to kernel c788e460-9f22-48ed-b62e-2a3520c3bbcf.
+[I 2024-02-14 15:08:33.360 ServerApp] Restoring connection for c788e460-9f22-48ed-b62e-2a3520c3bbcf:099dca63-219a-417a-887b-5d901d93766c
+[I 2024-02-14 15:08:33.434 ServerApp] Connecting to kernel 426060dc-bf09-4904-ab96-c21f6cda5563.
+[I 2024-02-14 15:08:33.435 ServerApp] Restoring connection for 426060dc-bf09-4904-ab96-c21f6cda5563:42d94350-08d8-4679-b93c-3a5c6af4ae54
+[W 2024-02-14 15:10:03.368 ServerApp] WebSocket ping timeout after 90007 ms.
+[W 2024-02-14 15:10:03.435 ServerApp] WebSocket ping timeout after 90000 ms.
+[I 2024-02-14 15:10:08.372 ServerApp] Starting buffering for c788e460-9f22-48ed-b62e-2a3520c3bbcf:099dca63-219a-417a-887b-5d901d93766c
+[I 2024-02-14 15:10:08.437 ServerApp] Starting buffering for 426060dc-bf09-4904-ab96-c21f6cda5563:42d94350-08d8-4679-b93c-3a5c6af4ae54
