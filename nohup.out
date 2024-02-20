@@ -339,3 +339,125 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 2024-02-20 14:17:32.111775: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
 [I 2024-02-20 14:19:05.945 ServerApp] Saving file at /AnalyzeRecs.ipynb
 [I 2024-02-20 14:19:31.894 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 14:21:06.940 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-20 14:21:31.946 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 14:23:31.995 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 14:25:32.048 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 14:27:32.105 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 14:29:32.158 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 14:31:32.223 ServerApp] Saving file at /PopularityBad.ipynb
+2024-02-20 14:33:07.874630: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:33:07.874678: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:33:08.159733: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:33:08.159769: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:33:08.388445: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:33:08.388482: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:33:08.545042: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:33:08.545079: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:33:40.098386: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:33:40.098433: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:33:40.358139: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:33:40.358175: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:33:40.572527: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:33:40.572562: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:33:40.747168: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:33:40.747215: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 2024-02-20 14:33:48.977 ServerApp] Saving file at /AnalyzeRecs.ipynb
+2024-02-20 14:34:42.442556: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:34:42.442603: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:34:42.693176: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:34:42.693211: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:34:42.879462: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:34:42.879503: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 14:34:43.109840: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 14:34:43.109871: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 2024-02-20 14:35:49.072 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[W 2024-02-20 15:15:34.429 ServerApp] delete /elliot/results/pop_bad1/performance
+[W 2024-02-20 15:15:34.436 ServerApp] delete /elliot/results/pop_bad1/recs
+[W 2024-02-20 15:15:34.440 ServerApp] delete /elliot/results/pop_bad1/weights
+[I 2024-02-20 15:15:57.806 ServerApp] Saving file at /elliot/config_files/pop_bad1.yml
+[I 2024-02-20 15:16:25.642 ServerApp] Saving file at /elliot/config_files/pop_bad1.yml
+[I 2024-02-20 15:17:03.816 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:19:03.857 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:23:13.033 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:24:00.448 ServerApp] Starting buffering for 0fca18a9-64d1-425b-b84e-e65f6cc50c8f:c48145ed-125f-47d9-a953-1688e72ab761
+[I 2024-02-20 15:24:12.264 ServerApp] Connecting to kernel 0fca18a9-64d1-425b-b84e-e65f6cc50c8f.
+[I 2024-02-20 15:24:18.336 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:24:46.256 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-20 15:24:46.712 ServerApp] Starting buffering for 6ded6905-b045-405d-b7e8-fd98e10948a0:3635a9f4-4abd-4aa9-8e9f-19aa8526c453
+[I 2024-02-20 15:24:48.805 ServerApp] Connecting to kernel 6ded6905-b045-405d-b7e8-fd98e10948a0.
+[I 2024-02-20 15:24:59.042 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 15:24:59.796 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 15:25:00.020 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 15:25:00.171 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 15:25:00.338 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 15:25:02.418 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 15:25:07.270 ServerApp] Starting buffering for 0fca18a9-64d1-425b-b84e-e65f6cc50c8f:4f5933b4-6406-46b5-848f-8e772c498cab
+[I 2024-02-20 15:25:09.095 ServerApp] Connecting to kernel 0fca18a9-64d1-425b-b84e-e65f6cc50c8f.
+[I 2024-02-20 15:25:24.803 ServerApp] Kernel restarted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 15:25:24.815 ServerApp] Starting buffering for 0fca18a9-64d1-425b-b84e-e65f6cc50c8f:f792ddf3-3d42-47e8-99ed-bcf922a48a4a
+[I 2024-02-20 15:25:24.833 ServerApp] Connecting to kernel 0fca18a9-64d1-425b-b84e-e65f6cc50c8f.
+[I 2024-02-20 15:25:24.833 ServerApp] Restoring connection for 0fca18a9-64d1-425b-b84e-e65f6cc50c8f:f792ddf3-3d42-47e8-99ed-bcf922a48a4a
+[W 2024-02-20 15:25:31.520 ServerApp] delete /elliot/results/pop_bad1/recs
+[W 2024-02-20 15:25:31.527 ServerApp] delete /elliot/results/pop_bad1/weights
+[W 2024-02-20 15:25:31.532 ServerApp] delete /elliot/results/pop_bad1/performance
+2024-02-20 15:25:43.236657: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 15:25:43.236702: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-02-20 15:25:47.298885: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2024-02-20 15:25:47.298929: W tensorflow/stream_executor/cuda/cuda_driver.cc:312] failed call to cuInit: UNKNOWN ERROR (303)
+2024-02-20 15:25:47.298963: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (alice.ia.cwi.nl): /proc/driver/nvidia/version does not exist
+2024-02-20 15:25:47.299157: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-02-20 15:25:47.313501: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 1996120000 Hz
+2024-02-20 15:25:47.321337: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x49f5c10 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-02-20 15:25:47.321401: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+[I 2024-02-20 15:26:36.732 ServerApp] Starting buffering for c788e460-9f22-48ed-b62e-2a3520c3bbcf:af5d0ac1-1da8-4efe-a2f2-2d760a9f67fe
+[I 2024-02-20 15:26:48.852 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-20 15:27:09.812 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:29:10.805 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:31:11.802 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:33:12.802 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:37:14.800 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:41:16.791 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:43:16.844 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:47:16.885 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:51:16.932 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:55:16.977 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 15:57:03.682 ServerApp] Creating new notebook in 
+[I 2024-02-20 15:57:06.195 ServerApp] Kernel started: ab1d5d6c-939e-4dd0-8ee1-6fa5bc562eb0
+[I 2024-02-20 15:57:06.804 ServerApp] Connecting to kernel ab1d5d6c-939e-4dd0-8ee1-6fa5bc562eb0.
+2024-02-20 15:57:24.896051: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-02-20 15:57:24.896087: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+[I 2024-02-20 15:59:06.095 ServerApp] Saving file at /NGCFTest.ipynb
+[I 2024-02-20 15:59:18.768 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:01:06.140 ServerApp] Saving file at /NGCFTest.ipynb
+[I 2024-02-20 16:03:06.191 ServerApp] Saving file at /NGCFTest.ipynb
+[I 2024-02-20 16:03:20.756 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:07:21.751 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:09:06.747 ServerApp] Saving file at /NGCFTest.ipynb
+[I 2024-02-20 16:11:23.752 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:15:25.741 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:17:26.752 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:21:28.744 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:24:04.735 ServerApp] Saving file at /NGCFTest.ipynb
+[I 2024-02-20 16:25:30.739 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:27:31.741 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:29:32.729 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:33:34.721 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:35:30.430 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 16:35:33.024 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 16:35:33.268 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 16:35:33.469 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 16:35:33.619 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 16:35:33.766 ServerApp] Kernel interrupted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 16:35:34.767 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:35:38.713 ServerApp] Saving file at /PopularityBad.ipynb
+[I 2024-02-20 16:35:39.710 ServerApp] Kernel restarted: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-02-20 16:35:39.789 ServerApp] Starting buffering for 0fca18a9-64d1-425b-b84e-e65f6cc50c8f:f792ddf3-3d42-47e8-99ed-bcf922a48a4a
+[I 2024-02-20 16:35:39.803 ServerApp] Connecting to kernel 0fca18a9-64d1-425b-b84e-e65f6cc50c8f.
+[I 2024-02-20 16:35:39.803 ServerApp] Restoring connection for 0fca18a9-64d1-425b-b84e-e65f6cc50c8f:f792ddf3-3d42-47e8-99ed-bcf922a48a4a
+[I 2024-02-20 16:35:40.572 ServerApp] Saving file at /NGCFTest.ipynb
+[I 2024-02-20 16:35:41.970 ServerApp] Saving file at /AnalyzeRecs.ipynb
+[I 2024-02-20 16:35:43.142 ServerApp] Starting buffering for ab1d5d6c-939e-4dd0-8ee1-6fa5bc562eb0:6cbaec55-d402-4e36-a8c6-75f96f0907a9
+[I 2024-02-20 16:35:43.493 ServerApp] Starting buffering for 0fca18a9-64d1-425b-b84e-e65f6cc50c8f:f792ddf3-3d42-47e8-99ed-bcf922a48a4a
+[I 2024-02-20 16:35:43.904 ServerApp] Starting buffering for 6ded6905-b045-405d-b7e8-fd98e10948a0:602c06d9-48d2-49a8-841c-a5cc1f2a0328
