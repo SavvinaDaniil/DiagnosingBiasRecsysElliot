@@ -461,3 +461,12 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 [I 2024-02-20 16:35:43.142 ServerApp] Starting buffering for ab1d5d6c-939e-4dd0-8ee1-6fa5bc562eb0:6cbaec55-d402-4e36-a8c6-75f96f0907a9
 [I 2024-02-20 16:35:43.493 ServerApp] Starting buffering for 0fca18a9-64d1-425b-b84e-e65f6cc50c8f:f792ddf3-3d42-47e8-99ed-bcf922a48a4a
 [I 2024-02-20 16:35:43.904 ServerApp] Starting buffering for 6ded6905-b045-405d-b7e8-fd98e10948a0:602c06d9-48d2-49a8-841c-a5cc1f2a0328
+[I 2024-03-15 15:01:04.142 ServerApp] Shutting down on /api/shutdown request.
+[I 2024-03-15 15:01:04.162 ServerApp] Shutting down 5 extensions
+[I 2024-03-15 15:01:04.168 ServerApp] Shutting down 6 kernels
+[I 2024-03-15 15:01:04.188 ServerApp] Kernel shutdown: 710d78a4-6ba7-40ab-ab52-dc24877f2249
+[I 2024-03-15 15:01:04.203 ServerApp] Kernel shutdown: 6ded6905-b045-405d-b7e8-fd98e10948a0
+[I 2024-03-15 15:01:04.216 ServerApp] Kernel shutdown: c788e460-9f22-48ed-b62e-2a3520c3bbcf
+[I 2024-03-15 15:01:04.224 ServerApp] Kernel shutdown: 0fca18a9-64d1-425b-b84e-e65f6cc50c8f
+[I 2024-03-15 15:01:04.232 ServerApp] Kernel shutdown: 426060dc-bf09-4904-ab96-c21f6cda5563
+[I 2024-03-15 15:01:04.237 ServerApp] Kernel shutdown: ab1d5d6c-939e-4dd0-8ee1-6fa5bc562eb0
