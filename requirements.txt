@@ -10,4 +10,5 @@ PyYAML==5.4.1
 scikit_learn==0.24.1
 protobuf==3.20.1
 matplotlib==3.5.3
+lenskit==0.14.4
 -e git+https://github.com/sisinflab/elliot#egg=elliot
