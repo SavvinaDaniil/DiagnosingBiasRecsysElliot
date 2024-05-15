@@ -1,0 +1,29 @@
+experiment:
+  print_results_as_triplets: True # method, metric, value
+  dataset: pop_bad_big1 # data set choice
+  data_config:
+    strategy: fixed # whether the splitting is done by elliot or we're already drawing from train-test
+    # dataset_path: ../data/fairbook/fairbook_events.tsv
+    train_path: ../data/popularity_bad_big/pop_bad_big1_train.tsv
+    test_path: ../data/popularity_bad_big/pop_bad_big1_test.tsv
+  
+  top_k: 10 # length of recommended list
+  evaluation:
+    cutoffs: [10] # eg nDCG@5 and @10
+    # relevance_threshold: 0 # minimum value of rating to consider a test transcation relevant for the evaluation process, 0 is the default
+    # paired_ttest: True # whether there will be significance tests
+    # wilcoxon_test: True
+    simple_metrics: [nDCG] # skip RMSE for now because I think it results in weird results
+  # gpu: -1
+  models:
+    DMF:
+      meta:
+        save_recs: True
+      epochs: 10
+      batch_size: 512
+      lr: 0.0001
+      reg: 0.001
+      user_mlp: (64,32)
+      item_mlp: (64,32)
+      similarity: cosine
+        # n_fold: 5

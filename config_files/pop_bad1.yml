@@ -1,0 +1,59 @@
+experiment:
+  print_results_as_triplets: True # method, metric, value
+  dataset: pop_bad1 # data set choice
+  data_config:
+    strategy: fixed # whether the splitting is done by elliot or we're already drawing from train-test
+    # dataset_path: ../data/fairbook/fairbook_events.tsv
+    train_path: ../data/popularity_bad/pop_bad1_train.tsv
+    test_path: ../data/popularity_bad/pop_bad1_test.tsv
+    
+  # splitting:
+  #   # save_on_disk: False # whether to save the splits
+  #   # save_folder: this/is/the/path # and where
+  #   test_splitting:
+  #       strategy: random_subsampling # splitting strategy
+  #       test_ratio: 0.2
+  
+  top_k: 10 # length of recommended list
+  evaluation:
+    # cutoffs: [10, 5] # eg nDCG@5 and @10
+    # relevance_threshold: 0 # minimum value of rating to consider a test transcation relevant for the evaluation process, 0 is the default
+    # paired_ttest: True # whether there will be significance tests
+    # wilcoxon_test: True
+    simple_metrics: [RMSE] # skip RMSE for now because I think it results in weird results
+#  gpu: -1
+  models:
+    NGCF:
+      meta:
+        # hyper_max_evals: 20
+        # hyper_opt_alg: tpe
+        save_recs: True
+        # validation_metric: RMSE
+      lr: 0.0001
+      # lr: [0.0001, 0.0005, 0.001, 0.01, 0.1]
+      epochs: 50
+      # batch_size: 128
+      # batch_size: [128, 256, 512]
+      factors: 64
+      batch_size: 256
+      l_w: 0.1
+      # l_w: [0.0001, 0.001, 0.01, 0.1]
+      weight_size: (64,)
+      node_dropout: ()
+      message_dropout: (0.1,)
+      # n_fold: 5
+      
+    # ItemKNN:
+    #   verbose: False
+    #   # validation_metric: nDCG
+    #   meta:
+    #     save_recs: True
+    #   neighbors: 50
+    #   similarity: cosine
+
+  # # where to save the results
+  
+  # path_output_rec_result: this/is/the/path/
+  # path_output_rec_weight: this/is/the/path/
+  # path_output_rec_performance: this/is/the/path/
+  # path_log_folder: this/is/the/path/
