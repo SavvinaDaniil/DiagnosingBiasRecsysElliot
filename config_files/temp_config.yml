@@ -1,9 +1,8 @@
 experiment:
   data_config:
-    strategy: fixed
-    test_path: ../data/ml1m_fold_1_test.tsv
-    train_path: ../data/ml1m_fold_1_train.tsv
-  dataset: ml1m1
+    dataset_path: ../data/fairbook/fairbook_events.tsv
+    strategy: dataset
+  dataset: fairbook
   evaluation:
     simple_metrics:
     - nDCG
@@ -12,12 +11,29 @@ experiment:
       batch_size: 256
       epochs: 10
       item_mlp: (64,32)
-      lr: 0.0001
+      lr:
+      - 0.1
+      - 0.01
+      - 0.001
+      - 0.0001
       meta:
+        hyper_max_evals: 20
+        hyper_opt_alg: tpe
         save_recs: true
+        validation_metric: nDCG@10
+        validation_rate: 1
+        verbose: true
       n_fold: 1
-      reg: 0.001
+      reg:
+      - 1
+      - 0.1
+      - 0.01
+      - 0.001
       similarity: cosine
       user_mlp: (64,32)
   print_results_as_triplets: true
+  splitting:
+    test_splitting:
+      folds: 5
+      strategy: random_cross_validation
   top_k: 10
