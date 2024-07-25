@@ -22,11 +22,12 @@ experiment:
     DMF:
       meta:
         
-        hyper_opt_alg: grid
+        hyper_opt_alg: tpe
+        hyper_max_evals: 5
         validation_rate: 1
         verbose: True
         # save_weights: True
-        validation_metric: nDCG@10
+        validation_metric: RMSE
         save_recs: True
         
       user_mlp: (64,32)
