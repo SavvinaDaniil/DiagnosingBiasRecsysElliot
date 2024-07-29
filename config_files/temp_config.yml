@@ -1,0 +1,27 @@
+experiment:
+  data_config:
+    dataset_path: ../data/fairbook/fairbook_events.tsv
+    strategy: dataset
+  dataset: fairbook
+  evaluation:
+    simple_metrics:
+    - nDCG
+  models:
+    DMF:
+      batch_size: 256
+      epochs: 50
+      item_mlp: (64,32)
+      lr: 0.0001
+      meta:
+        save_recs: true
+        verbose: true
+      n_fold: 1
+      reg: 0.1
+      similarity: cosine
+      user_mlp: (64,32)
+  print_results_as_triplets: true
+  splitting:
+    test_splitting:
+      strategy: random_subsampling
+      test_ratio: 0.2
+  top_k: 10
