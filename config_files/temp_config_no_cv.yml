@@ -1,0 +1,39 @@
+experiment:
+  data_config:
+    dataset_path: ../data/fairbook/fairbook_events.tsv
+    strategy: dataset
+  dataset: fairbook
+  evaluation:
+    simple_metrics:
+    - RMSE
+  models:
+    DMF:
+      batch_size: 256
+      epochs: 10
+      item_mlp: (64,32)
+      lr:
+      - 0.1
+      - 0.01
+      - 0.001
+      - 0.0001
+      meta:
+        hyper_max_evals: 5
+        hyper_opt_alg: tpe
+        save_recs: true
+        validation_metric: RMSE
+        validation_rate: 1
+        verbose: true
+      n_fold: 1
+      reg:
+      - 1
+      - 0.1
+      - 0.01
+      - 0.001
+      similarity: cosine
+      user_mlp: (64,32)
+  print_results_as_triplets: true
+  splitting:
+    test_splitting:
+      strategy: random_subsampling
+      test_ratio: 0.2
+  top_k: 10
