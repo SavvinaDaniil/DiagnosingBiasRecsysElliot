@@ -22,8 +22,8 @@ experiment:
     DMF:
       meta:
         
-        hyper_opt_alg: tpe
-        hyper_max_evals: 5
+        # hyper_opt_alg: tpe
+        # hyper_max_evals: 5
         validation_rate: 1
         verbose: True
         # save_weights: True
