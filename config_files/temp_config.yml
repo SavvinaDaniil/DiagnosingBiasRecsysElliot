@@ -5,11 +5,11 @@ experiment:
   dataset: fairbook
   evaluation:
     simple_metrics:
-    - RMSE
+    - nDCG
   models:
     DMF:
-      batch_size: 256
-      epochs: 10
+      batch_size: 1024
+      epochs: 25
       item_mlp: (64,32)
       lr:
       - 0.1
@@ -20,15 +20,10 @@ experiment:
         hyper_max_evals: 5
         hyper_opt_alg: tpe
         save_recs: true
-        validation_metric: RMSE
+        validation_metric: nDCG
         validation_rate: 1
         verbose: true
       n_fold: 1
-      reg:
-      - 1
-      - 0.1
-      - 0.01
-      - 0.001
       similarity: cosine
       user_mlp: (64,32)
   print_results_as_triplets: true
