@@ -1,0 +1,2 @@
+model	nDCG
+DMF_seed=42_e=25_bs=1024_lr=0$1_umlp=64-64_imlp=64-64_negratio=5_reg=0$001_sim=cosine	0.002123661727307016
