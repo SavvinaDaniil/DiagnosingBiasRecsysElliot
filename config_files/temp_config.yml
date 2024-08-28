@@ -10,7 +10,7 @@ experiment:
     DMF:
       batch_size: 1024
       epochs: 25
-      item_mlp: (64,32)
+      item_mlp: (64,64)
       lr:
       - 0.1
       - 0.01
@@ -23,7 +23,7 @@ experiment:
         verbose: true
       n_fold: 1
       similarity: cosine
-      user_mlp: (64,32)
+      user_mlp: (64,64)
   print_results_as_triplets: true
   splitting:
     test_splitting:

@@ -1,0 +1,5 @@
+model	nDCG
+DMF_seed=42_e=25_bs=1024_lr=0$0001_umlp=64-32_imlp=64-32_negratio=5_reg=0$001_sim=cosine	0.012538532548800954
+DMF_seed=42_e=25_bs=1024_lr=0$001_umlp=64-32_imlp=64-32_negratio=5_reg=0$001_sim=cosine	0.01382254341841374
+DMF_seed=42_e=25_bs=1024_lr=0$01_umlp=64-32_imlp=64-32_negratio=5_reg=0$001_sim=cosine	0.015079418539255434
+DMF_seed=42_e=25_bs=1024_lr=0$1_umlp=64-32_imlp=64-32_negratio=5_reg=0$001_sim=cosine	0.011398741233293996
