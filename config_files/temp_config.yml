@@ -1,8 +1,8 @@
 experiment:
   data_config:
-    dataset_path: ../data/movielens_1m/ml1m.tsv
+    dataset_path: ../data/epinion/epinion.tsv
     strategy: dataset
-  dataset: ml1m
+  dataset: epinion
   evaluation:
     simple_metrics:
     - nDCG
@@ -10,7 +10,7 @@ experiment:
     DMF:
       batch_size: 1024
       epochs: 25
-      item_mlp: (64,64)
+      item_mlp: (64,32)
       lr:
       - 0.1
       - 0.01
@@ -23,7 +23,7 @@ experiment:
         verbose: true
       n_fold: 1
       similarity: cosine
-      user_mlp: (64,64)
+      user_mlp: (64,32)
   print_results_as_triplets: true
   splitting:
     test_splitting:
