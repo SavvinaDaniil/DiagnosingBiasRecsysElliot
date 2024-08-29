@@ -1,2 +1,0 @@
-model	metric	value
-DMF_seed=42_e=50_bs=256_lr=0$0001_umlp=64-32_imlp=64-32_negratio=5_reg=0$1_sim=cosine	nDCG	0.006481048802960982
