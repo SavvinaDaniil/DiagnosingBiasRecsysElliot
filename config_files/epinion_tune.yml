@@ -33,7 +33,7 @@ experiment:
       user_mlp: (64,32)
       item_mlp: (64,32)
       epochs: 25 #ok
-      batch_size: 1024 #ok
+      batch_size: 256 #ok
       lr: [0.1, 0.01, 0.001, 0.0001] #ok
       # reg: [1, 0.1, 0.01, 0.001] # WRONG 
       similarity: cosine

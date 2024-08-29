@@ -8,7 +8,7 @@ experiment:
     - nDCG
   models:
     DMF:
-      batch_size: 1024
+      batch_size: 256
       epochs: 25
       item_mlp: (64,32)
       lr:
