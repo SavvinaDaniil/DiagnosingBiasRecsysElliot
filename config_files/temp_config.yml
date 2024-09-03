@@ -1,0 +1,22 @@
+experiment:
+  data_config:
+    strategy: fixed
+    test_path: ../data/ml1m_fold_1_test.tsv
+    train_path: ../data/ml1m_fold_1_train.tsv
+  dataset: ml1m1
+  evaluation:
+    simple_metrics:
+    - nDCG
+  models:
+    DMF:
+      batch_size: 1024
+      epochs: 25
+      item_mlp: (64,64)
+      lr: 0.1
+      meta:
+        save_recs: true
+      n_fold: 1
+      similarity: cosine
+      user_mlp: (64,64)
+  print_results_as_triplets: true
+  top_k: 10

@@ -21,9 +21,8 @@ experiment:
         save_recs: True
       user_mlp: (64,32)
       item_mlp: (64,32)
-      epochs: 10 #ok
-      batch_size: 256 #ok
+      epochs: 25 #ok
+      batch_size: 1024 #ok
       lr: 0.0001 #ok
-      reg: 0.001 #ok 
       similarity: cosine
       n_fold: 1
