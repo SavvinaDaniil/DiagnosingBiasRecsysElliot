@@ -51,13 +51,13 @@ def calculate_ACLT(train_df, recs, user_col, item_col, limit=0.2):
     longtail_items_in_training_set = track_longtail_items(
         train_df, user_col, item_col, limit
     )
-    print(
-        "nr of longtail", len(recs[recs[item_col].isin(longtail_items_in_training_set)])
-    )
+    # print(
+    #     "nr of longtail", len(recs[recs[item_col].isin(longtail_items_in_training_set)])
+    # )
     aclt = len(recs[recs[item_col].isin(longtail_items_in_training_set)]) / len(
         recs[user_col].unique()
     )
-    print(aclt)
+    # print(aclt)
     return aclt
 
 
