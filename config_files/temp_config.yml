@@ -1,9 +1,9 @@
 experiment:
   data_config:
     strategy: fixed
-    test_path: ../data/ml1m_fold_4_test.tsv
-    train_path: ../data/ml1m_fold_4_train.tsv
-  dataset: ml1m4
+    test_path: ../data/ml1m_fold_5_test.tsv
+    train_path: ../data/ml1m_fold_5_train.tsv
+  dataset: ml1m5
   evaluation:
     simple_metrics:
     - nDCG
