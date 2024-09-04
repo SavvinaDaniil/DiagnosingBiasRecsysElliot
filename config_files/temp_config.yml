@@ -1,9 +1,9 @@
 experiment:
   data_config:
     strategy: fixed
-    test_path: ../data/ml1m_fold_5_test.tsv
-    train_path: ../data/ml1m_fold_5_train.tsv
-  dataset: ml1m5
+    test_path: ../data/uniformly_random1/uniformly_random_fold_1_test.tsv
+    train_path: ../data/uniformly_random1/uniformly_random_fold_1_train.tsv
+  dataset: uniformly_random1
   evaluation:
     simple_metrics:
     - nDCG
@@ -11,12 +11,12 @@ experiment:
     DMF:
       batch_size: 1024
       epochs: 25
-      item_mlp: (64,32)
+      item_mlp: (64,64)
       lr: 0.01
       meta:
         save_recs: true
       n_fold: 1
       similarity: cosine
-      user_mlp: (64,32)
+      user_mlp: (64,64)
   print_results_as_triplets: true
   top_k: 10
