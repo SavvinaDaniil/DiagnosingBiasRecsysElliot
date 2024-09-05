@@ -1,9 +1,9 @@
 experiment:
   data_config:
     strategy: fixed
-    test_path: ../data/uniformly_random1/uniformly_random_fold_1_test.tsv
-    train_path: ../data/uniformly_random1/uniformly_random_fold_1_train.tsv
-  dataset: uniformly_random1
+    test_path: ../data/uniformly_random2/uniformly_random_fold_2_test.tsv
+    train_path: ../data/uniformly_random2/uniformly_random_fold_2_train.tsv
+  dataset: uniformly_random2
   evaluation:
     simple_metrics:
     - nDCG
