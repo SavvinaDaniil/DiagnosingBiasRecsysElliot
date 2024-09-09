@@ -1,9 +1,9 @@
 experiment:
   data_config:
     strategy: fixed
-    test_path: ../data/popularity_good4/popularity_good_fold_4_test.tsv
-    train_path: ../data/popularity_good4/popularity_good_fold_4_train.tsv
-  dataset: popularity_good4
+    test_path: ../data/popularity_good_big3/popularity_good_for_bp_ur_fold_3_test.tsv
+    train_path: ../data/popularity_good_big3/popularity_good_for_bp_ur_fold_3_train.tsv
+  dataset: popularity_good_big3
   evaluation:
     simple_metrics:
     - nDCG

@@ -1,0 +1,24 @@
+[
+    {
+        "default_validation_metric": "nDCG",
+        "default_validation_cutoff": 10,
+        "rel_threshold": 0
+    },
+    {
+        "meta": {
+            "save_recs": true
+        },
+        "recommender": "DMF_seed=42_e=25_bs=1024_lr=0$001_umlp=64-32_imlp=64-32_negratio=5_reg=0$001_sim=cosine",
+        "configuration": {
+            "batch_size": 1024,
+            "epochs": 25,
+            "item_mlp": "(64,32)",
+            "lr": 0.001,
+            "n_fold": 1,
+            "similarity": "cosine",
+            "user_mlp": "(64,32)",
+            "name": "DMF_seed=42_e=25_bs=1024_lr=0$001_umlp=64-32_imlp=64-32_negratio=5_reg=0$001_sim=cosine",
+            "best_iteration": 5
+        }
+    }
+]
