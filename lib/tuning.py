@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
 
 
 from elliot.run import run_experiment
@@ -13,7 +12,6 @@ import yaml
 import copy
 
 
-# In[ ]:
 def tune(dataset):
     if dataset == 'fairbook':
         tune_fairbook()
@@ -55,7 +53,6 @@ def tune_fairbook():
         os.remove('config_files/temp_config.yml')    
 
 
-# In[ ]:
 
 
 def tune_ml1m():
@@ -89,8 +86,6 @@ def tune_ml1m():
         # Remove the temp file
         os.remove('config_files/temp_config.yml')    
 
-
-# In[ ]:
 
 
 def tune_epinion():
