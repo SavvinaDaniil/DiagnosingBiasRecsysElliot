@@ -1,9 +1,9 @@
 experiment:
   data_config:
     strategy: fixed
-    test_path: ../data/popularity_good_big5/popularity_good_for_bp_ur_fold_5_test.tsv
-    train_path: ../data/popularity_good_big5/popularity_good_for_bp_ur_fold_5_train.tsv
-  dataset: popularity_good_big5
+    test_path: ../data/popularity_bad_big1/popularity_bad_for_bp_ur_fold_1_test.tsv
+    train_path: ../data/popularity_bad_big1/popularity_bad_for_bp_ur_fold_1_train.tsv
+  dataset: popularity_bad_big1
   evaluation:
     simple_metrics:
     - nDCG
@@ -11,12 +11,12 @@ experiment:
     DMF:
       batch_size: 1024
       epochs: 25
-      item_mlp: (64,32)
-      lr: 0.01
+      item_mlp: (64,64)
+      lr: 0.1
       meta:
         save_recs: true
       n_fold: 1
       similarity: cosine
-      user_mlp: (64,32)
+      user_mlp: (64,64)
   print_results_as_triplets: true
   top_k: 10
