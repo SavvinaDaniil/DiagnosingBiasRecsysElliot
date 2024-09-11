@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import mannwhitneyu
 from tqdm import tqdm
+from itertools import chain
 
 import logging, os
 logging.disable(logging.WARNING)
@@ -74,6 +75,8 @@ def analyse_real(data_strategy):
         file = open(file_location + 'detailed_per_item_'+data_strategy + "_" + mlp + ".pkl", "rb")
         result = pkl.load(file)
         detailed_results.append(result)
+
+    
     metrics_order = ["pop_corr", "ARP", "ave_PL", "ACLT", "AggDiv", "RMSE", "NDCG"]
     metrics = results[metrics_order]
     metrics = metrics.rename(
@@ -110,211 +113,79 @@ def analyse_real(data_strategy):
 
 
 
-def process_synthetic():
-    
-    data = 'uniformly_random'
-    
-    
-    location = 'results/'+data+'/performance/'
+def analyse_synthetic():
 
-    json_files = [best_params for best_params in os.listdir(location) if best_params.endswith('.json')]
+    mlp_values = ['64-32', '64-64'] # the different versions of the algorithm tested
+    algo_name = "DMF"
+    file_location = "metrics/" + algo_name + "/"
 
-
-    for filename in json_files: # corresponds to mlp
+    data_strategies = [
+        "uniformly_random",
+        "popularity_good",
+        "popularity_bad",
+        "popularity_good_for_bp_ur",
+        "popularity_bad_for_bp_ur",
+    ]
     
-        file = location + filename
-        with open(file) as f:
-            d = json.load(f)
-            mlp = d[1]['configuration']['item_mlp']
-            best_lr = d[1]['configuration']['lr']
-        for i in range(1, 6):
-            print('Start for ', i, '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-            with open('config_files/'+data+str(i)+'.yml', 'r') as f: # open the relevant yaml file
-                base_config = yaml.safe_load(f)
-            
-            
-            # Make a copy of the base configuration
-            config = copy.deepcopy(base_config)
-            # Update the configuration with the current hyperparameters
-            config['experiment']['models']['DMF']['user_mlp'] = mlp
-            config['experiment']['models']['DMF']['item_mlp'] = mlp
-            config['experiment']['models']['DMF']['lr'] = best_lr
+    all_results = []
+    for data_strategy in data_strategies:
+        results = []
+        for mlp in mlp_values:
+            file = open(file_location + data_strategy+'/'+data_strategy + "_" + mlp + ".pkl", "rb")
+            result = pkl.load(file)
+            results.append(result)
+        all_results.append(results)
+    ds = ["Scenario 1", "Scenario 2", "Scenario 3", "Scenario 4"
+          , "Scenario 5"
+     ]
+    index = pd.MultiIndex.from_product(
+        [ds, mlp_values], names=["DataStrategy", "Factors"]
+    ).drop_duplicates()
+
+    unlisted_sl = list(chain(*all_results))
+    relevant_values = ["pop_corr", "ARP", "ave_PL", "NDCG"]
+    final_results = pd.DataFrame(unlisted_sl, index=index)[relevant_values]
+
+    dict_detailed={}
+    for data_strategy in data_strategies:
+        detailed_results = []
+        for mlp in mlp_values:
+            file = open(file_location +data_strategy+ '/detailed_per_item_'+data_strategy + "_" + mlp + ".pkl", "rb")
+            result = pkl.load(file)
+            detailed_results.append(result)
+        dict_detailed[data_strategy] = detailed_results
+
+    metrics_order = ["pop_corr", "ARP", "ave_PL", "NDCG"]
+    metrics = final_results[metrics_order]
+    metrics = metrics.rename(
+        columns={"pop_corr": "PopCorr", "ave_PL": "PL",  "NDCG": "NDCG@10"}
+    )
+    metrics['RealPopCorr'] = metrics.PopCorr.apply(lambda x: x[0])
+    metrics['Significance'] = metrics.PopCorr.apply(lambda x: True if x[1]<0.005 else False)
+    metrics['PopCorr'] = metrics.RealPopCorr 
+    metrics = metrics.drop('RealPopCorr', axis=1)
+
+    with open("metrics/"+algo_name+'/synthetic_final_metrics.pkl', "wb") as f:
+        pkl.dump(metrics.round(3), f) 
+
+    for data_strategy in data_strategies:
+        print(data_strategy)
+        results = dict_detailed[data_strategy]
+        # # Significance tests
+        print(mlp_values) 
+        print('Use the above to figure out significance comparisons.')
         
-            # Write the configuration to a temporary file
-            with open('config_files/temp_config.yml', 'w') as f:
-                yaml.dump(config, f)
         
-            # Run the experiment with the current configuration
-            run_experiment('config_files/temp_config.yml')
-            
-            
-            # Remove the temp file
-            os.remove('config_files/temp_config.yml')
+        # ## 1. Average Recommendation Popularity
     
-    
-    # ## Train Popularity good
-    
- 
-    
-    
-    data = 'popularity_good'
-    location = 'results/'+data+'/performance/'
-
-    json_files = [best_params for best_params in os.listdir(location) if best_params.endswith('.json')]
-
-
-    for filename in json_files: # corresponds to mlp
-    
-        file = location + filename
-        with open(file) as f:
-            d = json.load(f)
-            mlp = d[1]['configuration']['item_mlp']
-            best_lr = d[1]['configuration']['lr']
-        for i in range(1, 6):
-            print('Start for ', i, '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-            with open('config_files/'+data+str(i)+'.yml', 'r') as f: # open the relevant yaml file
-                base_config = yaml.safe_load(f)
-            
-            
-            # Make a copy of the base configuration
-            config = copy.deepcopy(base_config)
-            # Update the configuration with the current hyperparameters
-            config['experiment']['models']['DMF']['user_mlp'] = mlp
-            config['experiment']['models']['DMF']['item_mlp'] = mlp
-            config['experiment']['models']['DMF']['lr'] = best_lr
+        print("ARP:")
+        print(mannwhitneyu_test(results))
         
-            # Write the configuration to a temporary file
-            with open('config_files/temp_config.yml', 'w') as f:
-                yaml.dump(config, f)
         
-            # Run the experiment with the current configuration
-            run_experiment('config_files/temp_config.yml')
-            
-            
-            # Remove the temp file
-            os.remove('config_files/temp_config.yml')  
-    
-    
-    # ## Train Popularity bad
-    
-    
-    
-    data = 'popularity_bad'    
-    
-    location = 'results/'+data+'/performance/'
-
-    json_files = [best_params for best_params in os.listdir(location) if best_params.endswith('.json')]
-
-
-    for filename in json_files: # corresponds to mlp
-    
-        file = location + filename
-        with open(file) as f:
-            d = json.load(f)
-            mlp = d[1]['configuration']['item_mlp']
-            best_lr = d[1]['configuration']['lr']
-        for i in range(1, 6):
-            print('Start for ', i, '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-            with open('config_files/'+data+str(i)+'.yml', 'r') as f: # open the relevant yaml file
-                base_config = yaml.safe_load(f)
-            
-            
-            # Make a copy of the base configuration
-            config = copy.deepcopy(base_config)
-            # Update the configuration with the current hyperparameters
-            config['experiment']['models']['DMF']['user_mlp'] = mlp
-            config['experiment']['models']['DMF']['item_mlp'] = mlp
-            config['experiment']['models']['DMF']['lr'] = best_lr
+        # ## 2. Popularity Lift
         
-            # Write the configuration to a temporary file
-            with open('config_files/temp_config.yml', 'w') as f:
-                yaml.dump(config, f)
-        
-            # Run the experiment with the current configuration
-            run_experiment('config_files/temp_config.yml')
-            
-            
-            # Remove the temp file
-            os.remove('config_files/temp_config.yml')    
-    
-    # ## Train Popularity good big
-        
-    
-    data = 'popularity_good_for_bp_ur'
-    location = 'results/'+data+'/performance/'
-
-    json_files = [best_params for best_params in os.listdir(location) if best_params.endswith('.json')]
-
-
-    for filename in json_files: # corresponds to mlp
-    
-        file = location + filename
-        with open(file) as f:
-            d = json.load(f)
-            mlp = d[1]['configuration']['item_mlp']
-            best_lr = d[1]['configuration']['lr']
-        for i in range(1, 6):
-            print('Start for ', i, '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-            with open('config_files/popularity_good_big'+str(i)+'.yml', 'r') as f: # open the relevant yaml file
-                base_config = yaml.safe_load(f)
-            
-            
-            # Make a copy of the base configuration
-            config = copy.deepcopy(base_config)
-            # Update the configuration with the current hyperparameters
-            config['experiment']['models']['DMF']['user_mlp'] = mlp
-            config['experiment']['models']['DMF']['item_mlp'] = mlp
-            config['experiment']['models']['DMF']['lr'] = best_lr
-        
-            # Write the configuration to a temporary file
-            with open('config_files/temp_config.yml', 'w') as f:
-                yaml.dump(config, f)
-        
-            # Run the experiment with the current configuration
-            run_experiment('config_files/temp_config.yml')
-            
-            
-            # Remove the temp file
-            os.remove('config_files/temp_config.yml')  
-    
-    
-    # ## Train Popularity bad big
-    
-    
-    
-    data = 'popularity_bad_for_bp_ur'
-    location = 'results/'+data+'/performance/'
-
-    json_files = [best_params for best_params in os.listdir(location) if best_params.endswith('.json')]
-
-
-    for filename in json_files: # corresponds to mlp
-    
-        file = location + filename
-        with open(file) as f:
-            d = json.load(f)
-            mlp = d[1]['configuration']['item_mlp']
-            best_lr = d[1]['configuration']['lr']
-        for i in range(1, 6):
-            print('Start for ', i, '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-            with open('config_files/popularity_bad_big'+str(i)+'.yml', 'r') as f: # open the relevant yaml file
-                base_config = yaml.safe_load(f)
-            
-            
-            # Make a copy of the base configuration
-            config = copy.deepcopy(base_config)
-            # Update the configuration with the current hyperparameters
-            config['experiment']['models']['DMF']['user_mlp'] = mlp
-            config['experiment']['models']['DMF']['item_mlp'] = mlp
-            config['experiment']['models']['DMF']['lr'] = best_lr
-        
-            # Write the configuration to a temporary file
-            with open('config_files/temp_config.yml', 'w') as f:
-                yaml.dump(config, f)
-        
-            # Run the experiment with the current configuration
-            run_experiment('config_files/temp_config.yml')
-            
-            
-            # Remove the temp file
-            os.remove('config_files/temp_config.yml')
+        for df in results:
+            df['popularity_lift'] = (df['recommendation']-df['profile'])/df['profile']*100
+        print("PL:")
+        print(mannwhitneyu_test(results, column_name = 'popularity_lift')) 
+        print("--------------------------------------------------------------")
