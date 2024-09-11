@@ -17,7 +17,7 @@ def highest_average(df_list, column_name = 'recommendation'):
     for i in range(len(df_list)):
         df = df_list[i]
         mean = np.mean(df[column_name].values)
-        # print('mean', mean)
+        print('mean', mean)
         if mean > highest_average:
             highest_average = mean
             highest_i = i
@@ -38,6 +38,7 @@ def mannwhitneyu_test(df_list, alt = 'greater', column_name = 'recommendation'):
         df2 = df_list[ind]
         x = df1[column_name].values
         y = df2[column_name].values
+        print(np.mean(x), np.mean(y))
         pvalue = mannwhitneyu(x,y, alternative = alt)[1]
         pvalues.append(pvalue)
     return [(to_test_inds[i],pvalues[i]) for i in range(len(pvalues))] # pvalues for all comparisons
@@ -90,6 +91,8 @@ def analyse_real(data_strategy):
     with open("metrics/"+algo_name+'/'+data_strategy+'/'+data_strategy+"_final_metrics.pkl", "wb") as f:
         pkl.dump(metrics.round(3).drop('RMSE',axis=1), f)  # RMSE is irrelevant for DMF
 
+    print(metrics.round(3).drop('RMSE', axis=1).to_latex())
+
     # # Significance tests
     print(mlp_values) 
     print('Use the above to figure out significance comparisons.')
@@ -124,7 +127,7 @@ def analyse_synthetic():
         "popularity_good",
         "popularity_bad",
         "popularity_good_for_bp_ur",
-        "popularity_bad_for_bp_ur",
+        # "popularity_bad_for_bp_ur",
     ]
     
     all_results = []
@@ -136,7 +139,7 @@ def analyse_synthetic():
             results.append(result)
         all_results.append(results)
     ds = ["Scenario 1", "Scenario 2", "Scenario 3", "Scenario 4"
-          , "Scenario 5"
+          # , "Scenario 5"
      ]
     index = pd.MultiIndex.from_product(
         [ds, mlp_values], names=["DataStrategy", "Factors"]
@@ -167,6 +170,7 @@ def analyse_synthetic():
 
     with open("metrics/"+algo_name+'/synthetic_final_metrics.pkl', "wb") as f:
         pkl.dump(metrics.round(3), f) 
+    print(metrics.round(3).drop('Significance',axis=1).to_latex())
 
     for data_strategy in data_strategies:
         print(data_strategy)
