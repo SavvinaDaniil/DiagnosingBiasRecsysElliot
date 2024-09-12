@@ -127,7 +127,7 @@ def analyse_synthetic():
         "popularity_good",
         "popularity_bad",
         "popularity_good_for_bp_ur",
-        # "popularity_bad_for_bp_ur",
+        "popularity_bad_for_bp_ur",
     ]
     
     all_results = []
@@ -139,7 +139,7 @@ def analyse_synthetic():
             results.append(result)
         all_results.append(results)
     ds = ["Scenario 1", "Scenario 2", "Scenario 3", "Scenario 4"
-          # , "Scenario 5"
+          , "Scenario 5"
      ]
     index = pd.MultiIndex.from_product(
         [ds, mlp_values], names=["DataStrategy", "Factors"]
