@@ -2,7 +2,7 @@
 
 ![Python Version](https://img.shields.io/badge/python-3.8-blue)
 
-Welcome to the Elliot repository! In this project, we experiment with detecting bias in recommender systems, specifically using the DMF algorithm. By following the steps below, you can set up the environment and run the provided Jupyter notebooks to conduct popularity bias analysis.
+Welcome to the Elliot repository! In this project, we experiment with detecting bias in recommender systems, using the frameworks Elliot, and testing the DMF algorithm. By following the steps below, you can set up the environment and run the provided Jupyter notebooks to conduct popularity bias analysis.
 
 ## Table of Contents
 
