@@ -55,3 +55,6 @@ Once you have completed the installation steps, you can now run the bias analysi
    Make sure that jupyter points to the jupyter installed from the requirements file. You may need to deactivate and activate the environment again.
 
 2. Open the notebooks from the project directory. Each notebook performs a different process by calling the appropriate widget. You can select which dataset you wish to perform the process on.
+
+
+*This research was carried out with funding from the KB National Library of the Netherlands.*
